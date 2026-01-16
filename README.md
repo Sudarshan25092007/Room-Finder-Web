@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RoomFinder – Rental Room Finder
 
-## Getting Started
+RoomFinder is a full‑stack web app to browse rental rooms and let owners manage their listings. Built with Next.js App Router and Supabase (Auth, DB, Storage).
 
-First, run the development server:
+Developed by **Sudarshan Patil H J** (MERN Stack Developer && Full Stack Developer).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🔍 **Browse rooms**
+  - Filter by location, rent range, property type, and tenant preference.
+  - Responsive grid of room cards with image slideshow.
+  - Room details page with large image carousel and direct call button.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🧑‍💼 **Owner dashboard**
+  - Login / signup with email + password.
+  - Create, edit, and delete room listings.
+  - Upload multiple images per room to Supabase Storage.
+  - “My Rooms” page showing only the logged‑in owner’s rooms.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🔐 **Auth & data**
+  - Supabase authentication.
+  - Rooms stored in a `rooms` table with RLS rules based on `owner_id`.
+  - Public bucket `room-images` for room photos.
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend:** Next.js (App Router), React, TypeScript, Tailwind CSS
+- **Backend & Data:** Supabase (Auth, Postgres, Storage)
+- **Styling:** Tailwind, custom UI components
+- **Deployment:** Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Developer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Name:** Sudarshan Patil H J  
+**Role:** MERN Stack Developer  
+**Focus Areas:** Full‑stack web apps and Mobile Application (React / Next.js, Node.js), REST APIs, authentication, and cloud databases (Supabase / MongoDB).
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
