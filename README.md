@@ -1,37 +1,46 @@
 # RoomFinder – Rental Room Finder
 
-RoomFinder is a full‑stack web app to browse rental rooms and let owners manage their listings. Built with Next.js App Router and Supabase (Auth, DB, Storage).
+RoomFinder is a full-stack web application that helps users discover rental rooms and allows owners to manage their listings efficiently. Built using Next.js App Router and Supabase (Auth, Database, Storage).
 
-Developed by **Sudarshan Patil H J** (MERN Stack Developer && Full Stack Developer).
+Developed by **Sudarshan Patil H J**.
 
-## Features
+---
 
-- 🔍 **Browse rooms**
-  - Filter by location, rent range, property type, and tenant preference.
-  - Responsive grid of room cards with image slideshow.
-  - Room details page with large image carousel and direct call button.
+## 🚀 Features
 
-- 🧑‍💼 **Owner dashboard**
-  - Login / signup with email + password.
-  - Create, edit, and delete room listings.
-  - Upload multiple images per room to Supabase Storage.
-  - “My Rooms” page showing only the logged‑in owner’s rooms.
+### 🔍 Browse Rooms
+- Filter rooms by **location**, rent range, property type, and tenant preference.
+- Responsive grid layout with image slideshow.
+- Detailed room page with image carousel and **direct call button** to the owner.
 
-- 🔐 **Auth & data**
-  - Supabase authentication.
-  - Rooms stored in a `rooms` table with RLS rules based on `owner_id`.
-  - Public bucket `room-images` for room photos.
+### 🧑‍💼 Owner Dashboard
+- Secure signup and login (email + password).
+- Create, edit, and delete room listings.
+- Upload multiple room images using Supabase Storage.
+- **My Rooms** section showing only the logged-in owner’s listings.
 
-## Tech Stack
+### 🔐 Authentication & Data
+- Supabase authentication.
+- PostgreSQL `rooms` table with **Row Level Security (RLS)** based on `owner_id`.
+- Public storage bucket (`room-images`) for room photos.
 
-- **Frontend:** Next.js (App Router), React, TypeScript, Tailwind CSS
-- **Backend & Data:** Supabase (Auth, Postgres, Storage)
-- **Styling:** Tailwind, custom UI components
-- **Deployment:** Vercel
+---
 
-## Developer
+## 🛠 Tech Stack
+
+- **Frontend:** Next.js (App Router), React, TypeScript, Tailwind CSS  
+- **Backend & Data:** Supabase (Auth, Postgres, Storage)  
+- **Styling:** Tailwind CSS, custom UI components  
+- **Deployment:** Vercel  
+
+---
+
+## 👨‍💻 Developer
 
 **Name:** Sudarshan Patil H J  
-**Role:** MERN Stack Developer  
-**Focus Areas:** Full‑stack web apps and Mobile Application (React / Next.js, Node.js), REST APIs, authentication, and cloud databases (Supabase / MongoDB).
-
+**Role:** Full-Stack / MERN Stack Developer  
+**Focus Areas:**  
+- Full-stack web applications  
+- React & Next.js  
+- REST APIs & authentication  
+- Cloud databases (Supabase, MongoDB)
