@@ -2,6 +2,9 @@ import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 
 // Keeps the Supabase auth session refreshed so server components see the latest user.
+// This is a middleware that runs on every request. It checks the cookies for the Supabase auth session,
+// and if it finds one, it refreshes the session by calling supabase.auth.getUser().
+// This ensures that server components always have access to the latest user information.
 export async function proxy(request: NextRequest) {
   let response = NextResponse.next({
     request: { headers: request.headers },
